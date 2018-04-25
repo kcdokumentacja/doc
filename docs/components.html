@@ -11,16 +11,54 @@
 
 <body>
     <header>
-        <h1>KC Commponents</h1>
+        <h1><a href="index.html"> KC | Dokumentacja</a></h1>
+        <h2>KC Components</h2>
         <nav>
             <ul>
                 <li>Icons</li>
                 <li>Buttons</li>
                 <li>Navs</li>
                 <li>Page header</li>
+                <li>Copy text snippet</li>
             </ul>
         </nav>
     </header>
+
+    <section>
+            <h2>Copy text snippet</h2>
+            
+            <input type="text" value="Hello World" id="myInput">
+            <button onclick="myFunction()">Copy</button>
+
+            <script>
+                    function myFunction() {
+                      var copyText = document.getElementById("myInput");
+                      copyText.select();
+                      document.execCommand("Copy");
+                      alert("Copied the text: " + copyText.value);
+                    }
+           </script>
+            
+
+           <div>
+               <h2>Snippet</h2>
+                &lt;input type="text" value="Hello World " id="myInput"&gt;<br>
+                &lt;button onclick="myFunction()">Copy&lt;/button&gt;<br>
+    
+                &lt;script&gt;<br>
+                        function myFunction() {<br>
+                          var copyText = document.getElementById("myInput");<br>
+                          copyText.select();<br>
+                          document.execCommand("Copy");<br>
+                          alert("Copied the text: " + copyText.value);<br>
+                        }<br>
+               &lt;/script&gt;<br>
+            </div>
+
+            
+          
+
+        </section>
 
 </body>
 
